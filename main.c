@@ -359,7 +359,7 @@ void update_info(void)
 	if (win.bar.h == 0)
 		return;
 	for (fw = 0, i = filecnt; i > 0; fw++, i /= 10);
-	mark = files[fileidx].flags & FF_MARK ? "* " : "";
+	mark = files[fileidx].flags & FF_MARK ? "✪ " : "";
 	l->p = l->buf;
 	r->p = r->buf;
 	if (mode == MODE_THUMB) {
